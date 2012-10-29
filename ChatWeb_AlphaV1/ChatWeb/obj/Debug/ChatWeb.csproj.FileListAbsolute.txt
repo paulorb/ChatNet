@@ -1,0 +1,4 @@
+D:\PauloRB\WorkItems\IndusoftNetworkExplorer\ChatWeb\ChatWeb\bin\ChatWeb.dll
+D:\PauloRB\WorkItems\IndusoftNetworkExplorer\ChatWeb\ChatWeb\bin\ChatWeb.pdb
+D:\PauloRB\WorkItems\IndusoftNetworkExplorer\ChatWeb\ChatWeb\obj\Debug\ChatWeb.dll
+D:\PauloRB\WorkItems\IndusoftNetworkExplorer\ChatWeb\ChatWeb\obj\Debug\ChatWeb.pdb

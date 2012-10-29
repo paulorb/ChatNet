@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Chat" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="ChatContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="FriendsSet" EntityType="Chat.Friends" />
+    <EntitySet Name="MessagesSet" EntityType="Chat.Messages" />
+    <EntitySet Name="OnLineUsersSet" EntityType="Chat.OnLineUsers" />
+  </EntityContainer>
+  <EntityType Name="Friends">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Username" Nullable="false" />
+    <Property Type="String" Name="Username_Friend" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Messages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Username_Orig" Nullable="false" />
+    <Property Type="String" Name="Username_Dest" Nullable="false" />
+    <Property Type="DateTime" Name="Date" Nullable="false" />
+    <Property Type="String" Name="Message" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OnLineUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Username" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Username" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Type="Boolean" Name="IsOnline" Nullable="false" />
+  </EntityType>
+</Schema>
